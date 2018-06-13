@@ -43,7 +43,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 15.0, 165.0, 53.0, 22.0 ],
+					"patching_rect" : [ 15.0, 240.0, 53.0, 22.0 ],
 					"style" : "",
 					"text" : "j.xfade~"
 				}
@@ -52,13 +52,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
+					"linecount" : 6,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 45.0, 120.0, 110.0, 22.0 ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 60.0, 120.0, 150.0, 89.0 ],
 					"style" : "",
-					"text" : "j.receive audio/mix"
+					"text" : "j.parameter audio/wetdry @type float @range 0. 1. @clipmode both @description \"Mix between dry and wet signals.\""
 				}
 
 			}
@@ -69,7 +70,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 15.0, 195.0, 40.0, 22.0 ],
+					"patching_rect" : [ 15.0, 270.0, 40.0, 22.0 ],
 					"style" : "",
 					"text" : "j.out~"
 				}
@@ -2675,7 +2676,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 225.0, 30.0, 30.0 ],
+					"patching_rect" : [ 15.0, 300.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -2688,7 +2689,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 180.0, 225.0, 30.0, 30.0 ],
+					"patching_rect" : [ 240.0, 300.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -2704,7 +2705,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 180.0, 135.0, 105.0, 76.0 ],
+					"patching_rect" : [ 240.0, 210.0, 108.0, 76.0 ],
 					"style" : "",
 					"text" : "j.model @amenities audio @description \"buchla style lowpass gate\""
 				}
@@ -2800,6 +2801,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 2 ],
+					"midpoints" : [ 69.5, 224.0, 58.5, 224.0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 

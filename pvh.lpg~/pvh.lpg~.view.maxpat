@@ -39,18 +39,20 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-8",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 445.799988, 455.0, 109.0, 22.0 ],
+					"patching_rect" : [ 445.799988, 455.0, 79.0, 35.0 ],
 					"style" : "",
-					"text" : "j.remote audio/mix"
+					"text" : "j.remote audio/wetdry"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "Mix between dry and wet signals.",
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
 					"degrees" : 360,
 					"floatoutput" : 1,
